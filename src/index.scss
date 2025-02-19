@@ -1,0 +1,10 @@
+@use 'assets/styles/resets/*';
+@use 'assets/styles/vars';
+@use 'assets/styles/common';
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
