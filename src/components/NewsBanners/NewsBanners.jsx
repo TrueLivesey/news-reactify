@@ -4,8 +4,6 @@ import Image from '../Image/Image';
 import PropTypes from 'prop-types';
 
 const NewsBanners = ({ item }) => {
-  console.log(item);
-
   return (
     <div className={styles.banner}>
       <Image image={item.image} />

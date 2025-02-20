@@ -1,5 +1,5 @@
-import styles from './styles.module.scss';
 import PropTypes from 'prop-types';
+import styles from './styles.module.scss';
 
 export const Skeleton = ({ count = 1, type = 'banner' }) => {
   return (
