@@ -1,5 +1,6 @@
 import styles from './styles.module.scss';
 import formatTimeAgo from '../../helpers/formatTimeAgo';
+import PropTypes from 'prop-types';
 
 export const NewsItem = ({ item }) => {
   return (
@@ -13,4 +14,13 @@ export const NewsItem = ({ item }) => {
       </div>
     </li>
   );
+};
+
+NewsItem.propTypes = {
+  item: PropTypes.shape({
+    image: PropTypes.string,
+    title: PropTypes.string,
+    published: PropTypes.string,
+    author: PropTypes.string,
+  }),
 };
