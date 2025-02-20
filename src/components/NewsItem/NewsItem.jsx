@@ -1,6 +1,6 @@
-import styles from './styles.module.scss';
-import formatTimeAgo from '../../helpers/formatTimeAgo';
 import PropTypes from 'prop-types';
+import formatTimeAgo from '../../helpers/formatTimeAgo';
+import styles from './styles.module.scss';
 
 export const NewsItem = ({ item }) => {
   return (
