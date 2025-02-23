@@ -1,15 +1,28 @@
 import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
-export const Categories = ({ categories, setSelectedCategory, selectedCategory }) => {
+export const Categories = ({
+  categories,
+  setSelectedCategory,
+  selectedCategory,
+}) => {
   return (
     <div className={styles.categories}>
+      <button
+        onClick={() => setSelectedCategory(null)}
+        className={!selectedCategory ? styles.active : styles.item}
+      >
+        All
+      </button>
+
       {categories.map((category) => {
         return (
           <button
             onClick={() => setSelectedCategory(category)}
             key={category}
-            className={selectedCategory === category ? styles.active : styles.item}
+            className={
+              selectedCategory === category ? styles.active : styles.item
+            }
           >
             {category}
           </button>
