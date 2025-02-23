@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './styles.module.scss';
 
 export const Search = ({ keywords, setKeywords }) => {
@@ -12,4 +13,9 @@ export const Search = ({ keywords, setKeywords }) => {
       />
     </div>
   );
+};
+
+Search.propTypes = {
+  keywords: PropTypes.string.isRequired,
+  setKeywords: PropTypes.func.isRequired,
 };
