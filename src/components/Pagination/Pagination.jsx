@@ -10,7 +10,11 @@ export const Pagination = ({
 }) => {
   return (
     <div className={styles.pagination}>
-      <button disabled={currentPage <= 1} onClick={handlePreviousPage} className={styles.arrow}>
+      <button
+        disabled={currentPage <= 1}
+        onClick={handlePreviousPage}
+        className={styles.arrow}
+      >
         {'<'}
       </button>
       <div className={styles.list}>

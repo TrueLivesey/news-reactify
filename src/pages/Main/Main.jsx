@@ -35,7 +35,7 @@ const Main = () => {
     }
   };
   const handlePageClick = (pageNumber) => {
-    changeFilters('page_number', pageNumber - 1);
+    changeFilters('page_number', pageNumber);
   };
 
   return (
